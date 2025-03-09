@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/tv_speedMPH"
+        android:layout_width="256dp"
+        android:layout_height="64dp"
+        android:text="MPH"
+        android:textAlignment="textEnd"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.353" />
+
+    <TextView
+        android:id="@+id/tv_speedMPS"
+        android:layout_width="256dp"
+        android:layout_height="64dp"
+        android:text="Speed"
+        android:textAlignment="textEnd"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tv_speedMPH"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.821" />
+
+    <TextView
+        android:id="@+id/tv_labellat"
+        android:layout_width="99dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="32dp"
+        android:text="Lat:"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_lat"
+        android:layout_width="91dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="32dp"
+        android:text="0.00"
+        android:textSize="34sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_labellat"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_labellon"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="188dp"
+        android:layout_marginTop="32dp"
+        android:text="Lon:"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_lon"
+        android:layout_width="105dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="0.00"
+        android:textSize="34sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_labellon"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_labelmps"
+        android:layout_width="99dp"
+        android:layout_height="62dp"
+        android:text="m/s"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_speedMPH"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toEndOf="@+id/tv_speedMPS"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.806" />
+
+    <TextView
+        android:id="@+id/tv_labelmph"
+        android:layout_width="128dp"
+        android:layout_height="64dp"
+        android:text="mph"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/tv_speedMPH"
+        app:layout_constraintTop_toBottomOf="@+id/tv_labelmps"
+        app:layout_constraintVertical_bias="0.073" />
+
+    <TextView
+        android:id="@+id/tv_distanceMeters"
+        android:layout_width="255dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="32dp"
+        android:text="Distance"
+        android:textAlignment="textEnd"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.006"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_speedMPH" />
+
+    <TextView
+        android:id="@+id/tv_labelDistanceMiles"
+        android:layout_width="128dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="284dp"
+        android:text="meters"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_labelmph"
+        app:layout_constraintVertical_bias="0.098" />
+
+    <TextView
+        android:id="@+id/tv_accuracy"
+        android:layout_width="218dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="96dp"
+        android:text="Accuracy"
+        android:textAlignment="textEnd"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="41dp" />
+
+    <TextView
+        android:id="@+id/tv_accuracyLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:text="accuracy"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.97"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_labelDistanceMiles"
+        app:layout_constraintVertical_bias="0.676" />
+
+    <TextView
+        android:id="@+id/tv_distanceMilesLabel"
+        android:layout_width="122dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="284dp"
+        android:text="miles"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_accuracyLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_labelDistanceMiles"
+        app:layout_constraintVertical_bias="0.373" />
+
+    <TextView
+        android:id="@+id/tv_distanceMiles"
+        android:layout_width="243dp"
+        android:layout_height="62dp"
+        android:text="Distance"
+        android:textAlignment="textEnd"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_accuracy"
+        app:layout_constraintEnd_toStartOf="@+id/tv_distanceMilesLabel"
+        app:layout_constraintHorizontal_bias="0.351"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_distanceMeters"
+        app:layout_constraintVertical_bias="0.293" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
